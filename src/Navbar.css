@@ -1,0 +1,181 @@
+a{
+    text-decoration: none;
+    color: #5B5B5E;
+    margin: 0 25px;
+}
+
+.navbar{
+height: 85px;
+color: #5B5B5E;
+/* margin: auto; */
+position: relative;
+display: flex;
+align-items: center;
+/* justify-content: flex-end; */
+justify-content: space-between;
+width: 55vw;
+
+}
+.navlinks{
+    margin-right: 20px;
+    display: flex;
+align-items: center;
+display: flex;
+justify-content: space-between;
+
+}
+nav h3{
+font-family: Inter;
+font-size: 18px;
+/* font-style: Archivo; */
+font-weight: 500;
+}
+nav h3:hover{
+    cursor: pointer;
+}
+.signIn-btn{
+width: 173px;
+height: 48px;
+border-radius: 30px;
+background: #000080;
+color: #fff;
+text-align: center;
+font-size: 16px;
+font-style: medium;
+font-weight: 500;
+border: none;
+}
+.signIn-btn:hover{
+    cursor: pointer;
+}
+.navbar h3:hover{
+    opacity: 0.8;
+}
+.hamburger-menu {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+@media screen and (max-width: 1075px) {
+.signIn-btn{
+  min-width: 178px;  
+}
+a{
+    margin: 0 15px;
+}
+}
+@media screen and (max-width: 1020px) {
+.nav{
+    padding: 20px 50px ;
+}
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0px;
+        background: #fff;
+        /* box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1); */
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+        align-items: normal;
+        justify-content: normal;
+        z-index: 10;
+        transition: 0.3s ease-in-out;
+        border-radius: 0px;
+        /* padding-left: 40px; */
+        
+    }
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        width: 50%;
+        align-items: normal;
+        justify-content: normal;
+        margin-left: 3%;
+    }
+    /* .logo{
+        margin-right: 0px;
+        align-self: flex-start;
+        margin-left: 40px;
+    } */
+    .home-bg{
+        display: none;
+    }
+    .logo {
+        /* position: fixed; */
+        /* position: absolute; */
+        top: 30px;
+        left: 60px; 
+        z-index: 20; 
+      }
+    
+
+    .navbar.active {
+        right: 0;
+    }
+    .home{
+        margin-top: 20px;
+    }
+.hamburger-menu{
+    color: #000;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    z-index: 15;
+}
+.signIn-btn{
+    width: 250px;
+    margin-left: 40px;
+}
+.navbar h3{
+    /* color: #000; */
+    margin: 20px;
+    margin-left: 40px;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+    
+}
+.navbar h3:hover{
+    opacity: 0.8;
+}
+
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: rotate(55deg) translate(-5px, 6px);
+        position: fixed;
+        top: 40px;
+        right: 20px;
+
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: rotate(-51deg) translate(-5px, -6px);
+        position: fixed;
+        right: 20px;
+        top: 40px;
+
+    }
+  
+    .signIn-btn{
+        margin-top: 30px;
+    }
+    
+
+}
+

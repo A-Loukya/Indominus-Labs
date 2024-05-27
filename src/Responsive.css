@@ -1,0 +1,66 @@
+/* home responsive */
+@media screen and (max-width: 1360px) {
+    .home h1{
+        width: 80vw;
+    }
+    .ellipse2{
+        right: 2em;
+    }
+}
+
+@media screen and (max-width: 790px) {
+.home h1{
+    width: 90vw;
+}
+}
+@media screen and (max-width: 540px) {
+    .ellipse1 {
+        display: none;
+    }
+    .ellipse2{
+        display: none;
+    }
+    .ellipse3{
+        display: none;
+    }
+    .ellipse4{
+        display: none;
+    }
+    .lines{
+        display: none;
+    }
+    .home h1{
+        width: 100vw;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    .nav{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .button{
+        align-items: center;
+        justify-content: center;
+    }
+    .button button{
+        margin: 15px 0;
+        align-self: center;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .home h1{
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 100%;
+        padding: 12px;
+    }
+    .nav{
+        padding: 12px;
+    }
+}
+@media screen and (max-width: 330px) {
+.home h1{
+    font-size: 24px;
+}
+}
